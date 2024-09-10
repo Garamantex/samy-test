@@ -1,11 +1,9 @@
-
-
 export function likeImage(id: number) {
-    return fetch(`/api/images/${id}/likes`, {
-        method: 'POST',
-    })
+  return fetch(`/api/images/${id}/likes`, {
+    method: 'POST',
+  })
     .then((response) => {
-        return response
+      return response
     })
-    .catch((error) => error);
+    .catch((error) => error)
 }

@@ -7,7 +7,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        arial: ["ArialMT", "sans-serif"],
+        brandon: ["BrandonGrotesque", "sans-serif"],
+        droid: ["DroidSerif", "sans-serif"],
+        neustra: ["NeutrafaceText", "sans-serif"],
+        opensans: ["OpenSans", "sans-serif"],
+      },
+    },
   },
   plugins: [react()],
 }

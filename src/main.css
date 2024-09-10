@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'ArialMT';
+  src: url('assets/fonts/ArialMT.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('assets/fonts/BrandonGrotesque-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DroidSerif';
+  src: url('assets/fonts/DroidSerif-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeustrafaceText';
+  src: url('assets/fonts/Neutraface2Text-Book.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/fonts/OpenSans-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
