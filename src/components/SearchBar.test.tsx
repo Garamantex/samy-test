@@ -1,3 +1,13 @@
+/**
+ * This test file is testing the functionality of the SearchBar component.
+ *
+ * The first test case checks if the input element with the placeholder text is rendered correctly.
+ *
+ * The second test case checks if the handleSearch function is called when the input value changes.
+ *
+ * The third test case checks if the search term is displayed correctly in the input element.
+ */
+
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import SearchBar from './SearchBar'

@@ -1,3 +1,32 @@
+/**
+ * Component that renders an image card.
+ *
+ * @component
+ * @example
+ * ```tsx
+ * <ImageCard
+ *   images={images}
+ *   handleLike={handleLike}
+ *   loadingLike={loadingLike}
+ *   loading={loading}
+ *   isEnd={isEnd}
+ * />
+ * ```
+ *
+ * @param {Object[]} images - An array of card content objects.
+ * @param {number} images[].id - The unique identifier of the image.
+ * @param {string} images[].title - The title of the image.
+ * @param {string} images[].author - The author of the image.
+ * @param {string} images[].main_attachment.small - The URL of the small version of the image.
+ * @param {boolean} images[].liked - Indicates whether the image is liked or not.
+ * @param {number} images[].likes_count - The number of likes for the image.
+ * @param {Function} handleLike - A function to handle the like action for an image.
+ * @param {number | null} loadingLike - The ID of the image that is currently being liked, or null if no image is being liked.
+ * @param {boolean} loading - Indicates whether images are being loaded or not.
+ * @param {boolean} isEnd - Indicates whether there are more images to load or not.
+ *
+ * @returns {JSX.Element} The rendered image card component.
+ */
 import React from 'react'
 import { CardContent } from '../api/getImages'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

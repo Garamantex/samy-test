@@ -1,3 +1,9 @@
+/**
+ * The main component of the application.
+ * Renders the header and image card components.
+ *
+ * @returns The rendered JSX elements.
+ */
 import React from 'react'
 import Header from './components/Header'
 import ImageCard from './components/ImageCard'

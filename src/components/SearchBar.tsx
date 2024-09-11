@@ -1,3 +1,27 @@
+/**
+ * Component for rendering a search bar.
+ *
+ * @component
+ * @example
+ * ```tsx
+ * import React from 'react';
+ * import SearchBar from './SearchBar';
+ *
+ * const App: React.FC = () => {
+ *   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+ *     // handle search logic
+ *   };
+ *
+ *   return (
+ *     <div>
+ *       <SearchBar searchTerm="" handleSearch={handleSearch} />
+ *     </div>
+ *   );
+ * };
+ *
+ * export default App;
+ * ```
+ */
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'

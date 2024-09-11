@@ -1,3 +1,10 @@
+/**
+ * Custom hook for handling image likes.
+ *
+ * @param images - The array of card content representing the images.
+ * @param setImages - The state setter function for updating the images.
+ * @returns An object containing the handleLike function, loadingLike state, and error state.
+ */
 import { useState } from 'react'
 import { CardContent } from '../api/getImages'
 import { likeImage } from '../api/likeImage'

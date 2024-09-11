@@ -1,3 +1,8 @@
+/**
+ * This code exports an interface called CardContent, which defines the structure of card data.
+ * It also exports a function called getImages, which fetches images from the '/api/images' endpoint,
+ * paginates the data based on the provided page and limit parameters, and returns the paginated data as an array of CardContent objects.
+ */
 export interface CardContent {
   type: string
   id: number
@@ -17,16 +22,11 @@ export interface CardContent {
   }[]
 }
 
-export function getImages(page: number, limit: number) {
-  return fetch('/api/images')
-    .then((response) => {
-      return response.json()
-    })
-    .then((data) => {
-      const startIndex = (page - 1) * limit
-      const endIndex = page * limit
-
-      const paginatedData = data.slice(startIndex, endIndex)
-      return paginatedData as CardContent[]
-    })
+export async function getImages(page: number, limit: number) {
+  const response = await fetch('/api/images')
+  const data = await response.json()
+  const startIndex = (page - 1) * limit
+  const endIndex = page * limit
+  const paginatedData = data.slice(startIndex, endIndex)
+  return paginatedData as CardContent[]
 }

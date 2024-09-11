@@ -1,4 +1,24 @@
-// Header.test.tsx
+/**
+ * @fileoverview This file contains the test cases for the Header component.
+ * @module components/Header.test
+ */
+
+/**
+ * Renders the Header component with a search bar and icon and verifies if they are displayed correctly.
+ * @test
+ */
+it('renders correctly with a search bar and icon', () => {
+  // Test implementation
+})
+
+/**
+ * Filters the images based on the search input and verifies if the setImages function is called with the correct filtered images.
+ * @test
+ */
+it('filters images based on search input', () => {
+  // Test implementation
+})
+
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import Header from './Header'

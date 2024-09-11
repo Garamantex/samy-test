@@ -1,3 +1,9 @@
+/**
+ * Custom hook for fetching images from an API.
+ *
+ * @param initialPage - The initial page number for fetching images (default: 1).
+ * @returns An object containing the fetched images, loading state, error state, current page number, and a function to set the images.
+ */
 import { useState, useEffect } from 'react'
 import { getImages, CardContent } from '../api/getImages'
 

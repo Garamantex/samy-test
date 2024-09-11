@@ -1,4 +1,11 @@
-// __tests__/ImageCard.test.tsx
+/**
+ * This file contains the unit tests for the ImageCard component.
+ * The ImageCard component is responsible for rendering images and handling like button clicks.
+ * It receives an array of images, a function to handle likes, loading state, and end state as props.
+ * The tests in this file ensure that the component renders images correctly, handles like button clicks,
+ * and displays loading and end messages correctly.
+ */
+
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import ImageCard from '../components/ImageCard'

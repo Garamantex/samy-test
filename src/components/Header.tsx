@@ -1,4 +1,25 @@
-// components/Header.tsx
+/**
+ * Header component that displays a header section with a logo and a search bar.
+ *
+ * @component
+ * @example
+ * ```tsx
+ * import React, { useState } from 'react'
+ * import SearchBar from './SearchBar'
+ * import { CardContent } from '../api/getImages'
+ *
+ * interface HeaderProps {
+ *   setImages: React.Dispatch<React.SetStateAction<CardContent[]>>
+ *   allImages: CardContent[]
+ * }
+ *
+ * const Header: React.FC<HeaderProps> = ({ setImages, allImages }) => {
+ *   // ... component implementation ...
+ * }
+ *
+ * export default Header
+ * ```
+ */
 import React, { useState } from 'react'
 import SearchBar from './SearchBar'
 import { CardContent } from '../api/getImages'
