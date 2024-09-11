@@ -12,7 +12,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ searchTerm, handleSearch }) => {
     <div className="flex items-center">
       <div className="relative">
         <input
-          className="py- rounded-full border border-gray-400 bg-[#f5f5f5] px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="rounded-full border border-gray-400 bg-[#f5f5f5] px-4 pl-10 placeholder:text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
           type="text"
           placeholder="You're looking for something?"
           value={searchTerm}

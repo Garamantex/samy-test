@@ -11,7 +11,8 @@ export const useFetchImages = (initialPage: number = 1) => {
 
   const getImagesFromApi = (page: number) => {
     setLoading(true)
-    getImages(page, 6)
+    const numImages = window.innerWidth >= 1024 ? 9 : 6
+    getImages(page, numImages)
       .then((data) => {
         if (data.length === 0) {
           setIsEnd(true)
