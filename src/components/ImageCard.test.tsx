@@ -45,7 +45,6 @@ describe('ImageCard Component', () => {
   test('renders images correctly', () => {
     render(<ImageCard {...props} />)
 
-    // Check if image elements are in the document
     mockImages.forEach((image) => {
       expect(screen.getByAltText(image.title)).toBeInTheDocument()
     })
@@ -54,19 +53,15 @@ describe('ImageCard Component', () => {
   test('handles like button click', () => {
     render(<ImageCard {...props} />)
 
-    // Click on the like button of the first image
     fireEvent.click(screen.getAllByRole('button')[0])
 
-    // Check if the mockHandleLike function was called with the correct image id
     expect(mockHandleLike).toHaveBeenCalledWith(mockImages[0].id)
   })
 
   test('displays loading and end messages correctly', () => {
-    // Test with loading true
     render(<ImageCard {...{ ...props, loading: true }} />)
     expect(screen.getByText('Loading more images...')).toBeInTheDocument()
 
-    // Test with isEnd true
     render(<ImageCard {...{ ...props, isEnd: true }} />)
     expect(screen.getByText('No more images to load.')).toBeInTheDocument()
   })

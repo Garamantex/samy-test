@@ -30,20 +30,20 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ setImages, allImages }) => {
-  const [searchTerm, setSearchTerm] = useState<string>('') // Estado para el valor del input
+  const [searchTerm, setSearchTerm] = useState<string>('')
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const searchValue = event.target.value
     setSearchTerm(searchValue)
 
     if (searchValue.length === 0) {
-      setImages(allImages) // Restablece las imágenes cuando el campo está vacío
+      setImages(allImages)
     } else if (searchValue.length >= 3) {
       const filtered = allImages.filter((image) =>
         image.title.toLowerCase().includes(searchValue.toLowerCase())
       )
       setImages(filtered)
     } else {
-      setImages(allImages) // Restablece las imágenes cuando hay menos de 3 caracteres
+      setImages(allImages)
     }
   }
   return (
